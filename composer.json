@@ -1,0 +1,68 @@
+{
+    "name": "wio/wiopayments",
+    "description": "WioPayments PHP SDK - Secure payment processing for Laravel applications",
+    "type": "library",
+    "keywords": ["laravel", "payment", "gateway", "wiopayments", "billing", "api", "fintech"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WioPayments Team",
+            "email": "developers@wiopayments.com",
+            "homepage": "https://wiopayments.com"
+        }
+    ],
+    "homepage": "https://github.com/wiopayments/laravel-sdk",
+    "support": {
+        "email": "support@wiopayments.com",
+        "docs": "https://docs.wiopayments.com"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wio\\WioPayments\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wio\\WioPayments\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "phpstan": "vendor/bin/phpstan analyse src --level=8",
+        "phpcs": "vendor/bin/phpcs src --standard=PSR12",
+        "phpcs-fix": "vendor/bin/phpcbf src --standard=PSR12"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wio\\WioPayments\\WioPaymentsServiceProvider"
+            ],
+            "aliases": {
+                "WioPayments": "Wio\\WioPayments\\Facades\\WioPayments"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

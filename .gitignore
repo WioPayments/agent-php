@@ -1,0 +1,36 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage/
+/coverage-html/
+/coverage-detailed/
+coverage.xml
+/.phpunit.cache
+.phpunit.result.cache
+
+# Logs
+*.log
+
+# Cache
+.php-cs-fixer.cache
+.phpstan.cache
+
+# Environment
+.env
+.env.local
+.env.testing
+
+# Build artifacts
+/build/
