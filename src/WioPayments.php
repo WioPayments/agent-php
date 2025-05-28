@@ -25,8 +25,7 @@ class WioPayments implements PaymentInterface
 
     public function __construct(
         string $apiKey,
-        string $secretKey,
-        ?string $baseUrl = null
+        string $secretKey
     ) {
         $this->validateCredentials($apiKey, $secretKey);
         
