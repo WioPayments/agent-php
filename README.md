@@ -47,7 +47,6 @@ Add your WioPayments credentials to your `.env` file:
 ```env
 WIOPAYMENTS_API_KEY=wio_live_sk_...
 WIOPAYMENTS_SECRET_KEY=wio_live_whsec_...
-WIOPAYMENTS_BASE_URL=https://gw.wiopayments.com/api/
 WIOPAYMENTS_TIMEOUT=30
 ```
 
