@@ -59,8 +59,7 @@ use Wio\WioPayments\WioPayments;
 
 $wioPayments = new WioPayments(
     apiKey: env('WIOPAYMENTS_API_KEY'),
-    secretKey: env('WIOPAYMENTS_SECRET_KEY'),
-    baseUrl: env('WIOPAYMENTS_BASE_URL') // Optional, defaults to production
+    secretKey: env('WIOPAYMENTS_SECRET_KEY')
 );
 ```
 
