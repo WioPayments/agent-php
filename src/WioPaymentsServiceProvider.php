@@ -19,8 +19,7 @@ class WioPaymentsServiceProvider extends ServiceProvider
         $this->app->singleton(WioPayments::class, function ($app) {
             return new WioPayments(
                 config('wiopayments.api_key'),
-                config('wiopayments.secret_key'),
-                config('wiopayments.base_url')
+                config('wiopayments.secret_key')
             );
         });
 
