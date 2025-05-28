@@ -13,7 +13,7 @@ return [
 
     'api_key' => env('WIOPAYMENTS_API_KEY'),
     'secret_key' => env('WIOPAYMENTS_SECRET_KEY'),
-    'base_url' => env('WIOPAYMENTS_BASE_URL', 'https://gw.wiopayments.com/api/'),
+    'base_url' => 'https://gw.wiopayments.com/api/',
 
     /*
     |--------------------------------------------------------------------------
